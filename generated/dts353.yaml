@@ -1,0 +1,497 @@
+modbus:
+  - name: "meterkast"
+    type: tcp
+    host: 192.168.5.251
+    port: 502
+    sensors:
+      - name: Serial number
+        unique_id: dts353_0000
+        scan_interval: 3600
+        slave: 1
+        input_type: holding
+        address: 0x0000
+        data_type: uint64
+      - name: Meter ID
+        unique_id: dts353_0002
+        scan_interval: 3600
+        slave: 1
+        input_type: holding
+        address: 0x0002
+        data_type: uint32
+      - name: Baud Rate
+        unique_id: dts353_0003
+        scan_interval: 3600
+        slave: 1
+        input_type: holding
+        address: 0x0003
+        data_type: uint32
+      - name: Software Version
+        unique_id: dts353_0004
+        scan_interval: 3600
+        slave: 1
+        input_type: holding
+        address: 0x0004
+        data_type: float32
+      - name: Hardware Version
+        unique_id: dts353_0006
+        scan_interval: 3600
+        slave: 1
+        input_type: holding
+        address: 0x0006
+        data_type: float32
+      - name: Cycle time
+        unique_id: dts353_000d
+        scan_interval: 3600
+        slave: 1
+        input_type: holding
+        address: 0x000d
+        data_type: uint32
+        unit_of_measurement: 's'
+        device_class: duration
+      - name: L1 Voltage
+        unique_id: dts353_000e
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x000e
+        data_type: float32
+        unit_of_measurement: 'V'
+        device_class: voltage
+      - name: L2 Voltage
+        unique_id: dts353_0010
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0010
+        data_type: float32
+        unit_of_measurement: 'V'
+        device_class: voltage
+      - name: L3 Voltage
+        unique_id: dts353_0012
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0012
+        data_type: float32
+        unit_of_measurement: 'V'
+        device_class: voltage
+      - name: Grid Frequency
+        unique_id: dts353_0014
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0014
+        data_type: float32
+        unit_of_measurement: 'Hz'
+        device_class: frequency
+      - name: L1 Current
+        unique_id: dts353_0016
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0016
+        data_type: float32
+        unit_of_measurement: 'A'
+        device_class: current
+      - name: L2 Current
+        unique_id: dts353_0018
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0018
+        data_type: float32
+        unit_of_measurement: 'A'
+        device_class: current
+      - name: L3 Current
+        unique_id: dts353_001a
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x001a
+        data_type: float32
+        unit_of_measurement: 'A'
+        device_class: current
+      - name: Total Active Power
+        unique_id: dts353_001c
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x001c
+        data_type: float32
+        unit_of_measurement: 'kW'
+        device_class: power
+      - name: L1 Active Power
+        unique_id: dts353_001e
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x001e
+        data_type: float32
+        unit_of_measurement: 'kW'
+        device_class: power
+      - name: L2 Active Power
+        unique_id: dts353_0020
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0020
+        data_type: float32
+        unit_of_measurement: 'kW'
+        device_class: power
+      - name: L3 Active Power
+        unique_id: dts353_0022
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0022
+        data_type: float32
+        unit_of_measurement: 'kW'
+        device_class: power
+      - name: Total reactive power
+        unique_id: dts353_0024
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0024
+        data_type: float32
+        unit_of_measurement: 'kVAr'
+        device_class: reactive_power
+      - name: L1 reactive power
+        unique_id: dts353_0026
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0026
+        data_type: float32
+        unit_of_measurement: 'kVAr'
+        device_class: reactive_power
+      - name: L2 reactive power
+        unique_id: dts353_0028
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0028
+        data_type: float32
+        unit_of_measurement: 'kVAr'
+        device_class: reactive_power
+      - name: L3 reactive power
+        unique_id: dts353_002a
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x002a
+        data_type: float32
+        unit_of_measurement: 'kVAr'
+        device_class: reactive_power
+      - name: Total Apparent Power
+        unique_id: dts353_002c
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x002c
+        data_type: float32
+        unit_of_measurement: 'kVA'
+        device_class: apparent_power
+      - name: L1 Apparent Power
+        unique_id: dts353_002e
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x002e
+        data_type: float32
+        unit_of_measurement: 'kVA'
+        device_class: apparent_power
+      - name: L2 Apparent Power
+        unique_id: dts353_0030
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0030
+        data_type: float32
+        unit_of_measurement: 'kVA'
+        device_class: apparent_power
+      - name: L3 Apparent Power
+        unique_id: dts353_0032
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0032
+        data_type: float32
+        unit_of_measurement: 'kVA'
+        device_class: apparent_power
+      - name: Total Power Factor
+        unique_id: dts353_0034
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0034
+        data_type: float32
+        unit_of_measurement: '%'
+        device_class: power_factor
+      - name: L1 Power Factor
+        unique_id: dts353_0036
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0036
+        data_type: float32
+        unit_of_measurement: '%'
+        device_class: power_factor
+      - name: L2 Power Factor
+        unique_id: dts353_0038
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x0038
+        data_type: float32
+        unit_of_measurement: '%'
+        device_class: power_factor
+      - name: L3 Power Factor
+        unique_id: dts353_003a
+        scan_interval: 10
+        slave: 1
+        input_type: holding
+        address: 0x003a
+        data_type: float32
+        unit_of_measurement: '%'
+        device_class: power_factor
+      - name: Total Active Energy
+        unique_id: dts353_0100
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0100
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L1 Total Active Energy
+        unique_id: dts353_0102
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0102
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L2 Total Active Energy
+        unique_id: dts353_0104
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0104
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L3 Total Active Energy
+        unique_id: dts353_0106
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0106
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: Forward Active Energy
+        unique_id: dts353_0108
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0108
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L1 Forward Active Energy
+        unique_id: dts353_010a
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x010a
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L2 Forward Active Energy
+        unique_id: dts353_010c
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x010c
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L3 Forward Active Energy
+        unique_id: dts353_010e
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x010e
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: Reverse Active Energy
+        unique_id: dts353_0110
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0110
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L1 Reverse Active Energy
+        unique_id: dts353_0112
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0112
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L2 Reverse Active Energy
+        unique_id: dts353_0114
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0114
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L3 Reverse Active Energy
+        unique_id: dts353_0116
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0116
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: Total Reactive Energy
+        unique_id: dts353_0118
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0118
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L1 Reactive Energy
+        unique_id: dts353_011a
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x011a
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L2 Reactive Energy
+        unique_id: dts353_011c
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x011c
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L3 Reactive Energy
+        unique_id: dts353_011e
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x011e
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: Forward Reactive Energy
+        unique_id: dts353_0120
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0120
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L1 Forward Reactive Energy
+        unique_id: dts353_0122
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0122
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L2 Forward Reactive Energy
+        unique_id: dts353_0124
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0124
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L3 Forward Reactive Energy
+        unique_id: dts353_0126
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0126
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: Reverse Reactive Energy
+        unique_id: dts353_0128
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x0128
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L1 Reverse Reactive Energy
+        unique_id: dts353_012a
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x012a
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L2 Reverse Reactive Energy
+        unique_id: dts353_012c
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x012c
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing
+      - name: L3 Reverse Reactive Energy
+        unique_id: dts353_012e
+        scan_interval: 60
+        slave: 1
+        input_type: holding
+        address: 0x012e
+        data_type: float32
+        unit_of_measurement: 'kWh'
+        device_class: energy
+        state_class: total_increasing

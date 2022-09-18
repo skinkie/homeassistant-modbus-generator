@@ -1,0 +1,59 @@
+03,0000,Serial number,1,Read,4,uint64,3600,,,
+03,0002,Meter ID,2,Read,2,uint32,3600,,,
+03,0003,Baud Rate,3,Read,2,uint32,3600,,,
+03,0004,Software Version,4,Read,4,float32,3600,,,
+03,0006,Hardware Version,5,Read,4,float32,3600,,,
+03,0009,S0 output rate,7,Read,4,float32,0,,,
+03,000B,Combined Code,8,Read,2,uint32,0,,,
+03,000C,HOLIDAY-WEEKEND T,9,Read,2,uint32,0,,,
+03,000D,Cycle time,10,Read,2,uint32,3600,s,duration,
+03,000E,L1 Voltage,11,Read,4,float32,10,V,voltage,
+03,0010,L2 Voltage,12,Read,4,float32,10,V,voltage,
+03,0012,L3 Voltage,13,Read,4,float32,10,V,voltage,
+03,0014,Grid Frequency,14,Read,4,float32,10,Hz,frequency,
+03,0016,L1 Current,15,Read,4,float32,10,A,current,
+03,0018,L2 Current,16,Read,4,float32,10,A,current,
+03,001A,L3 Current,17,Read,4,float32,10,A,current,
+03,001C,Total Active Power,18,Read,4,float32,10,kW,power,
+03,001E,L1 Active Power,19,Read,4,float32,10,kW,power,
+03,0020,L2 Active Power,20,Read,4,float32,10,kW,power,
+03,0022,L3 Active Power,21,Read,4,float32,10,kW,power,
+03,0024,Total reactive power,22,Read,4,float32,10,kVAr,reactive_power,
+03,0026,L1 reactive power,23,Read,4,float32,10,kVAr,reactive_power,
+03,0028,L2 reactive power,24,Read,4,float32,10,kVAr,reactive_power,
+03,002A,L3 reactive power,25,Read,4,float32,10,kVAr,reactive_power,
+03,002C,Total Apparent Power,26,Read,4,float32,10,kVA,apparent_power,
+03,002E,L1 Apparent Power,27,Read,4,float32,10,kVA,apparent_power,
+03,0030,L2 Apparent Power,28,Read,4,float32,10,kVA,apparent_power,
+03,0032,L3 Apparent Power,29,Read,4,float32,10,kVA,apparent_power,
+03,0034,Total Power Factor,30,Read,4,float32,10,%,power_factor,
+03,0036,L1 Power Factor,31,Read,4,float32,10,%,power_factor,
+03,0038,L2 Power Factor,32,Read,4,float32,10,%,power_factor,
+03,003A,L3 Power Factor,33,Read,4,float32,10,%,power_factor,
+03,003C,Time,34,Read,8,uint64,0,,timestamp,
+03,0040,Season ON/OFF,35,Read,2,uint32,0,,,
+03,0041,CRC CODE,36,Read,2,uint32,0,,,
+03,0100,Total Active Energy,35,Read,4,float32,60,kWh,energy,total_increasing
+03,0102,L1 Total Active Energy,36,Read,4,float32,60,kWh,energy,total_increasing
+03,0104,L2 Total Active Energy,37,Read,4,float32,60,kWh,energy,total_increasing
+03,0106,L3 Total Active Energy,38,Read,4,float32,60,kWh,energy,total_increasing
+03,0108,Forward Active Energy,39,Read,4,float32,60,kWh,energy,total_increasing
+03,010A,L1 Forward Active Energy,40,Read,4,float32,60,kWh,energy,total_increasing
+03,010C,L2 Forward Active Energy,41,Read,4,float32,60,kWh,energy,total_increasing
+03,010E,L3 Forward Active Energy,42,Read,4,float32,60,kWh,energy,total_increasing
+03,0110,Reverse Active Energy,43,Read,4,float32,60,kWh,energy,total_increasing
+03,0112,L1 Reverse Active Energy,44,Read,4,float32,60,kWh,energy,total_increasing
+03,0114,L2 Reverse Active Energy,45,Read,4,float32,60,kWh,energy,total_increasing
+03,0116,L3 Reverse Active Energy,46,Read,4,float32,60,kWh,energy,total_increasing
+03,0118,Total Reactive Energy,47,Read,4,float32,60,kWh,energy,total_increasing
+03,011A,L1 Reactive Energy,48,Read,4,float32,60,kWh,energy,total_increasing
+03,011C,L2 Reactive Energy,49,Read,4,float32,60,kWh,energy,total_increasing
+03,011E,L3 Reactive Energy,50,Read,4,float32,60,kWh,energy,total_increasing
+03,0120,Forward Reactive Energy,51,Read,4,float32,60,kWh,energy,total_increasing
+03,0122,L1 Forward Reactive Energy,52,Read,4,float32,60,kWh,energy,total_increasing
+03,0124,L2 Forward Reactive Energy,53,Read,4,float32,60,kWh,energy,total_increasing
+03,0126,L3 Forward Reactive Energy,54,Read,4,float32,60,kWh,energy,total_increasing
+03,0128,Reverse Reactive Energy,55,Read,4,float32,60,kWh,energy,total_increasing
+03,012A,L1 Reverse Reactive Energy,56,Read,4,float32,60,kWh,energy,total_increasing
+03,012C,L2 Reverse Reactive Energy,57,Read,4,float32,60,kWh,energy,total_increasing
+03,012E,L3 Reverse Reactive Energy,58,Read,4,float32,60,kWh,energy,total_increasing
